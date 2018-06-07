@@ -1,0 +1,46 @@
+<!--Add 100 Number to a Set-->
+<html>
+<head>
+	<script type="text/javascript">
+
+		function addNumberToSet(){
+			var setOfUniqNo = new Set();
+			//setOfUniqNo.add('10');
+			for(var i=0; i<=100; i++){
+				setOfUniqNo.add(i);
+			}
+			setOfUniqNo.add(100);
+			setOfUniqNo.add(100);
+			setOfUniqNo.add(10);
+			setOfUniqNo.add(1);
+			setOfUniqNo.add(2);
+
+			document.write('<br/>'+setOfUniqNo+'<br>');
+
+			for(let b of setOfUniqNo){
+				document.write('<br/>'+b+'<br>');
+			}
+			
+		}
+
+		function fun(){
+			var arr = ["sai","sai","Akash","Val","Sihi","Akash","Sihi","Sihi"];
+			document.write(arr);
+			let Uset = new Set();
+			for(let a of arr){
+				Uset.add(a);	
+			}
+			
+			for(let b of Uset){
+				document.write('<br/>'+b+'<br>');
+			}
+			
+			addNumberToSet();
+		}
+
+	</script>
+</head>
+<body onload="fun()">
+	
+</body>
+</html>
